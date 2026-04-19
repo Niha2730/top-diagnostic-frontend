@@ -22,7 +22,7 @@ export function Header() {
       <div className="hidden bg-primary text-primary-foreground text-xs sm:block">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5 sm:px-6">
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1"><Phone className="h-3 w-3" /> 1800-123-4567 (Toll Free)</span>
+            <span className="flex items-center gap-1"><Phone className="h-3 w-3" /> +91 6262424248</span>
             <span>support@topdiagnostic.com</span>
           </div>
           <span>NABL Accredited • ISO 15189 Certified</span>

@@ -1,6 +1,23 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Building2,
+  Landmark,
+  GitBranch,
+  Clock,
+  Facebook,
+  Instagram,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 import logo from "@/assets/logo.jpeg";
+
+const officeAddress =
+  "Opposite Shagun Hotel, Peer Gate, Bhopal, Madhya Pradesh, India, 462001";
+
+const operatingLocations = "Bhopal, Nagpur, Jabalpur, Raipur & Indore";
 
 export function Footer() {
   return (
@@ -47,15 +64,37 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex items-start gap-2.5 text-sm text-card/70">
                 <Phone className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
-                <div><p>1800-123-4567</p><p className="text-xs text-card/50">Toll Free, 24/7</p></div>
+                <span>+91 6262424248</span>
               </div>
               <div className="flex items-center gap-2.5 text-sm text-card/70">
                 <Mail className="h-4 w-4 text-secondary shrink-0" />
                 <span>support@topdiagnostic.com</span>
               </div>
               <div className="flex items-start gap-2.5 text-sm text-card/70">
-                <MapPin className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
-                <span>Mumbai, Delhi, Bangalore, and 50+ cities across India</span>
+                <MapPin className="h-4 w-4 text-secondary shrink-0 mt-0.5" aria-hidden />
+                <div className="flex min-w-0 flex-col gap-2.5">
+                  <div className="flex items-start gap-2">
+                    <Building2 className="h-3.5 w-3.5 text-secondary shrink-0 mt-0.5" aria-hidden />
+                    <div>
+                      <p className="font-medium text-card">Corporate Office</p>
+                      <p className="mt-0.5">{officeAddress}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Landmark className="h-3.5 w-3.5 text-secondary shrink-0 mt-0.5" aria-hidden />
+                    <div>
+                      <p className="font-medium text-card">Registered Office</p>
+                      <p className="mt-0.5">{officeAddress}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-start gap-2.5 text-sm text-card/70">
+                <GitBranch className="h-4 w-4 text-secondary shrink-0 mt-0.5" aria-hidden />
+                <div>
+                  <p className="font-medium text-card">Operating In</p>
+                  <p className="mt-0.5">{operatingLocations}</p>
+                </div>
               </div>
               <div className="flex items-center gap-2.5 text-sm text-card/70">
                 <Clock className="h-4 w-4 text-secondary shrink-0" />
